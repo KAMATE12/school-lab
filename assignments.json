@@ -1,0 +1,10 @@
+[
+  {
+    "assignment_id": "assignment-01",
+    "allowed_template": "from typing import Iterable",
+    "requirements": [
+      "Объяснить решение.",
+      "Предоставить код Python."
+    ]
+  }
+]

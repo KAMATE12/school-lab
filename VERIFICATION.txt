@@ -1,0 +1,97 @@
+Final verification on Linux, Python 3.12.14. Windows 3.14.7 results for the previous 26-test version were supplied by the student.
+Installed a non-editable wheel in /tmp/school-lab-clean, a newly created venv. Runtime dependencies: standard library only.
+
+COMMAND: -m unittest discover -v
+EXIT: 0
+
+test_unverified_declaration_requires_review (test_ai_analysis.AIDeclarationAnalyzerTests.test_unverified_declaration_requires_review) ... ok
+test_verified_declaration_does_not_trigger_this_rule (test_ai_analysis.AIDeclarationAnalyzerTests.test_verified_declaration_does_not_trigger_this_rule) ... ok
+test_counts_nonempty_lines_and_preserves_positions (test_analysis.LengthAnalyzerTests.test_counts_nonempty_lines_and_preserves_positions) ... ok
+test_existing_output_is_preserved (test_analysis_cli.AnalysisCliTests.test_existing_output_is_preserved) ... ok
+test_invalid_line_does_not_stop_next_submission (test_analysis_cli.AnalysisCliTests.test_invalid_line_does_not_stop_next_submission) ... ok
+test_valid_input_produces_two_reports (test_analysis_cli.AnalysisCliTests.test_valid_input_produces_two_reports) ... ok
+test_out_of_bounds_evidence_is_rejected (test_analysis_service.AnalysisServiceTests.test_out_of_bounds_evidence_is_rejected) ... ok
+test_unexpected_failure_becomes_structured_error (test_analysis_service.AnalysisServiceTests.test_unexpected_failure_becomes_structured_error) ... ok
+test_analysis_cli_uses_assignment_catalog (test_final_contracts.FinalContracts.test_analysis_cli_uses_assignment_catalog) ... ok
+test_assignment_catalog_validation (test_final_contracts.FinalContracts.test_assignment_catalog_validation) ... ok
+test_direct_invalid_ai_declaration_is_rejected (test_final_contracts.FinalContracts.test_direct_invalid_ai_declaration_is_rejected) ... ok
+test_import_cli_stdout_is_json (test_final_contracts.FinalContracts.test_import_cli_stdout_is_json) ... ok
+test_invalid_metadata_is_rejected (test_final_contracts.FinalContracts.test_invalid_metadata_is_rejected) ... ok
+test_mutating_analyzer_cannot_change_original (test_final_contracts.FinalContracts.test_mutating_analyzer_cannot_change_original) ... ok
+test_nested_schema_and_wrong_root (test_final_contracts.FinalContracts.test_nested_schema_and_wrong_root) ... ok
+test_shared_analyzer_contract (test_final_contracts.FinalContracts.test_shared_analyzer_contract) ... ok
+test_template_configuration_changes_hash (test_final_contracts.FinalContracts.test_template_configuration_changes_hash) ... ok
+test_conflict_preserves_original (test_reception.ReceptionTests.test_conflict_preserves_original) ... ok
+test_duplicate_returns_original (test_reception.ReceptionTests.test_duplicate_returns_original) ... ok
+test_import_continues_after_invalid_json (test_reception.ReceptionTests.test_import_continues_after_invalid_json) ... ok
+test_new_submission_is_stored (test_reception.ReceptionTests.test_new_submission_is_stored) ... ok
+test_file_closes_after_early_exit (test_sources.LineSourceTests.test_file_closes_after_early_exit) ... ok
+test_file_closes_when_processing_raises (test_sources.LineSourceTests.test_file_closes_when_processing_raises) ... ok
+test_sources_preserve_lines_and_can_reopen (test_sources.LineSourceTests.test_sources_preserve_lines_and_can_reopen) ... ok
+test_changed_indentation_does_not_match (test_template.TemplateAnalyzerTests.test_changed_indentation_does_not_match) ... ok
+test_exact_template_positions (test_template.TemplateAnalyzerTests.test_exact_template_positions) ... ok
+test_unknown_analyzer_is_rejected (test_template.TemplateAnalyzerTests.test_unknown_analyzer_is_rejected) ... ok
+test_ai_usage_requires_tool_and_purpose (test_validation.ValidationTests.test_ai_usage_requires_tool_and_purpose) ... ok
+test_content_change_changes_hash (test_validation.ValidationTests.test_content_change_changes_hash) ... ok
+test_empty_content_is_rejected (test_validation.ValidationTests.test_empty_content_is_rejected) ... ok
+test_invalid_field_values (test_validation.ValidationTests.test_invalid_field_values) ... ok
+test_invalid_json_is_rejected (test_validation.ValidationTests.test_invalid_json_is_rejected) ... ok
+test_key_order_does_not_change_hash (test_validation.ValidationTests.test_key_order_does_not_change_hash) ... ok
+test_missing_and_unknown_fields (test_validation.ValidationTests.test_missing_and_unknown_fields) ... ok
+test_validation_preserves_input (test_validation.ValidationTests.test_validation_preserves_input) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.362s
+
+OK
+
+
+COMMAND: -m school_lab.cli submissions.jsonl
+EXIT: 0
+{"accepted":12,"duplicate":0,"errors":0}
+
+Line 1: accepted id=sub-001
+Line 2: accepted id=sub-002
+Line 3: accepted id=sub-003
+Line 4: accepted id=sub-004
+Line 5: accepted id=sub-005
+Line 6: accepted id=sub-006
+Line 7: accepted id=sub-007
+Line 8: accepted id=sub-008
+Line 9: accepted id=sub-009
+Line 10: accepted id=sub-010
+Line 11: accepted id=sub-011
+Line 12: accepted id=sub-012
+
+
+COMMAND: -m school_lab.cli submissions_demo.jsonl
+EXIT: 1
+{"accepted":2,"duplicate":1,"errors":2}
+
+Line 1: accepted id=sub-001
+Line 2: duplicate id=sub-001
+Line 3: error code=invalid_json, field=json
+Message: Ошибка JSON / Invalid JSON: line=2, column=1
+Line 4: error code=conflict, field=submission_id
+Message: Этот идентификатор уже используется для другой работы / This identifier is already used for a different submission
+Line 5: accepted id=sub-002
+
+
+COMMAND: -m school_lab.cli invalid_submissions.jsonl
+EXIT: 1
+{"accepted":0,"duplicate":0,"errors":4}
+
+Line 1: error code=schema_error, field=student_id
+Message: Значение не должно быть пустым / The value must not be empty
+Line 2: error code=schema_error, field=submitted_at
+Message: Часовой пояс обязателен / A time zone is required
+Line 3: error code=schema_error, field=student_age
+Message: Неизвестное поле / Unknown field
+Line 4: error code=invalid_json, field=json
+Message: Ошибка JSON / Invalid JSON: line=2, column=1
+
+
+COMMAND: -m school_lab.analyze_cli submissions.jsonl --assignment-id assignment-01 --assignments assignments.json --analyzer length --analyzer template --analyzer ai_declaration --output examples/reports_public.jsonl
+EXIT: 0
+Summary: accepted=12, duplicate=0, reports=36, errors=0
+

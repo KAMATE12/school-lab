@@ -1,0 +1,25 @@
+# RU: Настраиваем инструмент сборки пакета.
+# EN: Configure the package build tool.
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# RU: Описываем проект.
+# EN: Describe the project.
+[project]
+name = "school-lab"
+version = "0.1.0"
+readme = "README.md"
+description = "Student submission processing"
+requires-python = ">=3.12"
+
+# RU: Создаём команду для запуска импорта.
+# EN: Create a command that launches the import.
+[project.scripts]
+school-lab = "school_lab.cli:main"
+school-lab-analyze = "school_lab.analyze_cli:main"
+
+# RU: Ищем пакеты в каталоге src.
+# EN: Discover packages in the src directory.
+[tool.setuptools.packages.find]
+where = ["src"]
