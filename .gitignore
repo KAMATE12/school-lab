@@ -5,3 +5,10 @@ __pycache__/
 build/
 dist/
 reports_local*.jsonl
+
+# RU: Локальные архивы обмена и воспроизводимые результаты.
+# EN: Local exchange archives and reproducible output files.
+/school-lab2-review-*.zip
+/school-lab2-*-update.zip
+/ast_comparisons_*.jsonl
+/token_comparisons_demo.jsonl
