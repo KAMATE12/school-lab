@@ -1,0 +1,38 @@
+         840421 function calls (704919 primitive calls) in 1.085 seconds
+
+   Ordered by: cumulative time
+   List reduced from 96 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.044    0.044    1.117    1.117 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\benchmark_lab2.py:46(workload)
+     4995    0.061    0.000    0.818    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_comparison.py:35(compare_ast_submissions)
+     9990    0.030    0.000    0.722    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:32(submission_hash)
+     9990    0.008    0.000    0.407    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:14(submission_to_dict)
+     9990    0.016    0.000    0.399    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1484(asdict)
+139860/9990    0.192    0.000    0.364    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1508(_asdict_inner)
+    15081    0.051    0.000    0.299    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:185(dumps)
+    15081    0.040    0.000    0.240    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:185(encode)
+     9990    0.013    0.000    0.223    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:20(canonical_json)
+    15081    0.182    0.000    0.182    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:207(iterencode)
+    19980    0.079    0.000    0.129    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1454(fields)
+     1000    0.029    0.000    0.071    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:269(parse_submission)
+   157210    0.047    0.000    0.047    0.000 {built-in method builtins.getattr}
+     1000    0.002    0.000    0.045    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\feature_cache.py:22(prepare)
+       32    0.002    0.000    0.042    0.001 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:192(prepare_ast_code)
+    10023    0.036    0.000    0.036    0.000 {built-in method _hashlib.openssl_sha256}
+     1000    0.001    0.000    0.036    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:82(decode_json)
+   149850    0.036    0.000    0.036    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1469(<genexpr>)
+     1000    0.005    0.000    0.035    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:304(loads)
+     1000    0.004    0.000    0.024    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py:340(decode)
+    10023    0.021    0.000    0.021    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+    57290    0.020    0.000    0.020    0.000 {built-in method builtins.isinstance}
+     9990    0.015    0.000    0.019    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1472(_is_dataclass_instance)
+     1000    0.012    0.000    0.015    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py:351(raw_decode)
+     6000    0.006    0.000    0.013    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:131(require_nonempty_string)
+       64    0.000    0.000    0.013    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:186(_key)
+     4995    0.012    0.000    0.012    0.000 {method 'update' of '_hashlib.HASH' objects}
+   800/32    0.002    0.000    0.009    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:205(visit)
+   800/32    0.001    0.000    0.009    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:502(visit)
+   800/32    0.003    0.000    0.009    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:555(generic_visit)
+
+

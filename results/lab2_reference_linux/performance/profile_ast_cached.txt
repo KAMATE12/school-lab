@@ -1,0 +1,38 @@
+         860624 function calls (725122 primitive calls) in 0.210 seconds
+
+   Ordered by: cumulative time
+   List reduced from 99 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.006    0.006    0.216    0.216 /workspace/scratch/0bdd7a78ee2f/review_lab2/benchmark_lab2.py:46(workload)
+     4995    0.011    0.000    0.164    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/ast_comparison.py:35(compare_ast_submissions)
+     9990    0.007    0.000    0.147    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/serialization.py:32(submission_hash)
+     9990    0.002    0.000    0.091    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/serialization.py:14(submission_to_dict)
+     9990    0.003    0.000    0.090    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1308(asdict)
+139860/9990    0.043    0.000    0.084    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1332(_asdict_inner)
+    15081    0.009    0.000    0.056    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:183(dumps)
+    15081    0.010    0.000    0.044    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:183(encode)
+     9990    0.003    0.000    0.042    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/serialization.py:20(canonical_json)
+    15081    0.031    0.000    0.031    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:205(iterencode)
+    19980    0.018    0.000    0.030    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1278(fields)
+     1000    0.000    0.000    0.011    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/feature_cache.py:22(prepare)
+     1000    0.003    0.000    0.011    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:269(parse_submission)
+       32    0.000    0.000    0.010    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/ast_features.py:192(prepare_ast_code)
+   157242    0.009    0.000    0.009    0.000 {built-in method builtins.getattr}
+   149850    0.009    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1293(<genexpr>)
+    29970    0.005    0.000    0.007    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1296(_is_dataclass_instance)
+     1000    0.000    0.000    0.006    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:82(decode_json)
+     1000    0.001    0.000    0.006    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:299(loads)
+    57290    0.004    0.000    0.004    0.000 {built-in method builtins.isinstance}
+     1000    0.001    0.000    0.004    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:333(decode)
+    10023    0.003    0.000    0.003    0.000 {built-in method _hashlib.openssl_sha256}
+       64    0.000    0.000    0.003    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/ast_features.py:186(_key)
+     6000    0.002    0.000    0.003    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:131(require_nonempty_string)
+    15081    0.003    0.000    0.003    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:105(__init__)
+   800/32    0.000    0.000    0.002    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/ast_features.py:205(visit)
+   800/32    0.000    0.000    0.002    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/ast.py:403(visit)
+   800/32    0.001    0.000    0.002    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/ast.py:477(generic_visit)
+  2912/64    0.001    0.000    0.002    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/ast_features.py:172(_structure)
+    10023    0.002    0.000    0.002    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+
+

@@ -1,0 +1,38 @@
+         541481 function calls in 0.314 seconds
+
+   Ordered by: cumulative time
+   List reduced from 64 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.095    0.095    0.341    0.341 /workspace/scratch/0bdd7a78ee2f/review_lab2/benchmark_lab2.py:46(workload)
+     1000    0.004    0.000    0.118    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/prepared_code.py:26(prepare_token_code)
+     1000    0.019    0.000    0.066    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/token_features.py:36(extract_code_tokens)
+     4995    0.022    0.000    0.054    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:14(compare_prepared_submissions)
+     1000    0.020    0.000    0.046    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/token_evidence.py:47(build_trigram_occurrences)
+     4995    0.003    0.000    0.046    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:183(dumps)
+     4995    0.003    0.000    0.042    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:183(encode)
+     4995    0.038    0.000    0.038    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:205(iterencode)
+    27000    0.010    0.000    0.020    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tokenize.py:577(_generate_tokens_from_c_tokenizer)
+     1000    0.000    0.000    0.014    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/ast.py:34(parse)
+     1000    0.013    0.000    0.013    0.000 {built-in method builtins.compile}
+     4995    0.013    0.000    0.013    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/similarity.py:6(jaccard_similarity)
+    19000    0.004    0.000    0.012    0.000 {built-in method builtins.any}
+     1000    0.004    0.000    0.012    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:269(parse_submission)
+    26000    0.006    0.000    0.010    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/collections/__init__.py:447(_make)
+    90208    0.010    0.000    0.010    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:65(<genexpr>)
+     1000    0.000    0.000    0.010    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:82(decode_json)
+     1000    0.001    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:299(loads)
+    40000    0.008    0.000    0.008    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/token_evidence.py:65(<genexpr>)
+     1000    0.001    0.000    0.007    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:333(decode)
+    90208    0.006    0.000    0.006    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:69(<genexpr>)
+     4995    0.006    0.000    0.006    0.000 {method 'update' of '_hashlib.HASH' objects}
+     1000    0.005    0.000    0.005    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:344(raw_decode)
+    41000    0.004    0.000    0.004    0.000 {method 'append' of 'list' objects}
+     6000    0.002    0.000    0.003    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:131(require_nonempty_string)
+    26000    0.003    0.000    0.003    0.000 {built-in method __new__ of type object at 0x144d380}
+    37992    0.002    0.000    0.002    0.000 {built-in method builtins.len}
+     3000    0.000    0.000    0.002    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:207(optional_string)
+     8000    0.001    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:193(require_string)
+    20990    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+
+

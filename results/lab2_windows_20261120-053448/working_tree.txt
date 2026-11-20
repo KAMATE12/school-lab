@@ -1,0 +1,14 @@
+﻿ M .gitignore
+ M AI_USAGE.md
+ M README.md
+?? STAGE_B_RUN_FR.md
+?? UPDATE_SHA256.json
+?? benchmark_lab2.py
+?? defense_lab2_template.py
+?? results/
+?? run_lab2_stage_b.ps1
+?? src/school_lab/feature_cache.py
+?? src/school_lab/quality_experiment.py
+?? test_quality_experiment.py
+?? test_stage_b_runner.py
+?? write_lab2_report.py

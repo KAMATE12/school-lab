@@ -1,0 +1,38 @@
+         316001 function calls in 0.212 seconds
+
+   Ordered by: cumulative time
+   List reduced from 67 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.096    0.096    0.217    0.217 /workspace/scratch/0bdd7a78ee2f/review_lab2/benchmark_lab2.py:46(workload)
+     4995    0.020    0.000    0.049    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:14(compare_prepared_submissions)
+     4995    0.003    0.000    0.045    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:183(dumps)
+     4995    0.003    0.000    0.041    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:183(encode)
+     4995    0.038    0.000    0.038    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:205(iterencode)
+     1000    0.003    0.000    0.010    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:269(parse_submission)
+    90208    0.010    0.000    0.010    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:65(<genexpr>)
+     4995    0.009    0.000    0.009    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/similarity.py:6(jaccard_similarity)
+    90208    0.007    0.000    0.007    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/corpus_comparison.py:69(<genexpr>)
+     1000    0.000    0.000    0.006    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:82(decode_json)
+     4995    0.006    0.000    0.006    0.000 {method 'update' of '_hashlib.HASH' objects}
+     1000    0.001    0.000    0.006    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py:299(loads)
+     1000    0.000    0.000    0.004    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/feature_cache.py:22(prepare)
+     1000    0.001    0.000    0.004    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:333(decode)
+       32    0.000    0.000    0.003    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/prepared_code.py:26(prepare_token_code)
+     6000    0.001    0.000    0.003    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:131(require_nonempty_string)
+     1000    0.002    0.000    0.002    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:344(raw_decode)
+       32    0.001    0.000    0.002    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/token_features.py:36(extract_code_tokens)
+     3000    0.000    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:207(optional_string)
+    20990    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+     8000    0.001    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:193(require_string)
+     1000    0.000    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:234(validate_timestamp)
+     1000    0.001    0.000    0.001    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:285(__init__)
+       32    0.000    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/token_evidence.py:47(build_trigram_occurrences)
+     4995    0.001    0.000    0.001    0.000 {method 'encode' of 'str' objects}
+      864    0.000    0.000    0.001    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tokenize.py:577(_generate_tokens_from_c_tokenizer)
+     2000    0.001    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:147(require_fields)
+    11887    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+     2000    0.001    0.000    0.001    0.000 /workspace/scratch/0bdd7a78ee2f/review_lab2/src/school_lab/validation.py:46(reject_repeated_keys)
+     4995    0.000    0.000    0.000    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py:105(__init__)
+
+

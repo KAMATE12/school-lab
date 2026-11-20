@@ -1,0 +1,11 @@
+Processing ./review_lab2
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: school-lab
+  Building wheel for school-lab (pyproject.toml): started
+  Building wheel for school-lab (pyproject.toml): finished with status 'done'
+  Created wheel for school-lab: filename=school_lab-0.1.0-py3-none-any.whl size=60740 sha256=50ad0778fe3b60fa4098ee49326f6736d02a2a442b3eb9a694131ab06d06a7d2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-8tqo1pv3/wheels/44/12/d6/19fce2261f52dad1257a39e026e8878218f42259dad1be167a
+Successfully built school-lab
+Installing collected packages: school-lab
+Successfully installed school-lab-0.1.0

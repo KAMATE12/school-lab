@@ -12,3 +12,12 @@ reports_local*.jsonl
 /school-lab2-*-update.zip
 /ast_comparisons_*.jsonl
 /token_comparisons_demo.jsonl
+
+# RU: Архивы обновлений и воспроизводимые большие нагрузочные файлы.
+# EN: Update archives and reproducible large load fixtures.
+/school-lab2-stage-a-docs.zip
+/school-lab2-stage-b-update.zip
+/results/**/load_*.jsonl
+/results/**/checkpoint.json
+
+/UPDATE_SHA256.json

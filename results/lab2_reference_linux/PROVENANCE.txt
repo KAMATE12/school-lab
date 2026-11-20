@@ -1,0 +1,6 @@
+Measured on 2026-11-20, Linux / Python 3.12.14.
+Corpus corresponds to published commit dee17ba.
+Stage B source changes are delivered as an update, not yet committed on the student repository.
+Windows measurements and final publication remain to be confirmed.
+Performance load source: benchmark_lab2.py, seed 20261120.
+Raw load files omitted; regenerate using benchmark_lab2.py.

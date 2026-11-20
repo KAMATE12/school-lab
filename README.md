@@ -1,38 +1,58 @@
-# Python Core — лабораторные работы 1 и 2
+## Lab 2 — verified Windows results
 
-Автор: Эммануэль Камате. Группа: M80-103CB-26.
+Final Windows run: Python 3.14.7, 114 tests passed, 48 performance measurements completed.
+Both methods were evaluated on the same fixed pairs; indeterminate results are reported separately.
 
-## Текущее состояние: лабораторная 2, этап A
+- [Russian report — Windows](results/lab2_windows_20261120-053448/REPORT_LAB2_RU.md)
+- [Quality results](results/lab2_windows_20261120-053448/evaluation.json)
+- [Performance measurements](results/lab2_windows_20261120-053448/performance/performance.json)
 
-Реализованы потоковый импорт, токеновые 3-граммы/Jaccard, структурный AST/Jaccard,
-учёт разрешённого шаблона, исходные позиции совпадений и top-k кандидатов.
-Это промежуточная версия: качество на размеченном корпусе и нагрузочные измерения
-этапа Б ещё не представлены. Высокий score не доказывает нарушение.
-
-- [Состояние этапа A и воспроизведение](LAB2_STAGE_A.md)
-- [Объяснение AST и ограничения (FR)](AST_METHOD_FR.md)
-- [Объяснение top-k и ограничения (FR)](RANKING_FR.md)
-- [Декларация использования ИИ](AI_USAGE.md)
-
-Из корня проекта в PowerShell:
-
-```powershell
-# RU: Устанавливаем текущую версию и запускаем проверки.
-# EN: Install the current version and run the checks.
-.\.venv\Scripts\python.exe -m pip install .
-.\.venv\Scripts\python.exe -m unittest discover -v
-.\.venv\Scripts\python.exe explore_ranking.py
-```
-
-На Windows подтверждены 86 успешных тестов. Подробности и ожидаемые результаты —
-в LAB2_STAGE_A.md. Исходники лабораторной 1 сохранены в теге lab-1.
-REPORT_RU.pdf, REPORT_RU.md, VERIFICATION.txt и MEASUREMENTS.json относятся к
-лабораторной 1; они не являются отчётом или измерениями лабораторной 2.
+The Windows reproduction requested in the earlier instructions is now complete.
+The Linux results remain a separate reference experiment.
 
 ---
 
-Ниже сохранена документация лабораторной 1 для исторического контекста.
-Её команды создания тега lab-1 не следует повторять при работе над лабораторной 2.
+# Python Core — лабораторные работы 1 и 2
+
+Автор: Камате Эммануэль. Группа: M80-103CB-26.
+
+## Лабораторная 2: этап Б — качество и измерения
+
+Корпус зафиксирован коммитом `dee17ba`: 44 работы, 60 пар, 20 непересекающихся семейств.
+Добавлены отдельные команды настройки и оценки token/AST, обработка неопределённости,
+профилирование, ограниченный кеш точных исходников и сравнение производительности до/после.
+Основная траектория — Python Core. Высокий score не доказывает нарушение.
+
+- [Инструкция запуска этапа Б (FR)](STAGE_B_RUN_FR.md)
+- [Отчёт измеренного запуска Linux (RU)](results/lab2_reference_linux/REPORT_LAB2_RU.md)
+- [Корпус и происхождение (FR)](CORPUS_QUALITY_FR.md)
+- [AST и ограничения (FR)](AST_METHOD_FR.md)
+- [Top-k (FR)](RANKING_FR.md)
+- [Исторический этап А](LAB2_STAGE_A.md)
+- [Использование ИИ](AI_USAGE.md)
+
+Windows, из корня проекта:
+
+```powershell
+# RU: Запускаем проверку, настройку, оценку и измерения.
+# EN: Run validation, tuning, evaluation, and measurements.
+powershell -ExecutionPolicy Bypass -File .\run_lab2_stage_b.ps1
+```
+
+Результаты каждого Windows-запуска помещаются в `results/lab2_windows_<timestamp>/`.
+Локальный отчёт создаётся из этих результатов. Референсный отчёт Linux не является
+подтверждением измерений на Windows. Политика порогов привязана к хешам исходников,
+корпуса и версии Python; нельзя использовать политику другой среды без повторной настройки.
+Конечный тег `lab-2` создаётся после локальных проверок и проверки состава коммита.
+
+Метрики условны на определённых результатах: доля null показана отдельно.
+Нагрузочный сценарий — индекс и пять полных запросов (5(N−1) сравнений), а не полный
+перебор всех пар. Синтетические измерения нельзя обобщать на реальные работы.
+
+REPORT_RU.pdf, REPORT_RU.md, VERIFICATION.txt и MEASUREMENTS.json — артефакты ЛР 1.
+Ниже сохранена её историческая документация; не повторяйте создание тега lab-1.
+
+---
 
 # Лабораторная работа 1: приём работ и расширяемые анализаторы
 

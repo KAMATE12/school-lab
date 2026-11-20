@@ -1,0 +1,38 @@
+         2272997 function calls (1967127 primitive calls) in 3.184 seconds
+
+   Ordered by: cumulative time
+   List reduced from 93 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.061    0.061    3.272    3.272 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\benchmark_lab2.py:46(workload)
+     1000    0.101    0.000    2.091    0.002 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:192(prepare_ast_code)
+     4995    0.070    0.000    0.886    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_comparison.py:35(compare_ast_submissions)
+     9990    0.036    0.000    0.780    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:32(submission_hash)
+     2000    0.023    0.000    0.675    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:186(_key)
+    17985    0.084    0.000    0.557    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:185(dumps)
+    17985    0.061    0.000    0.458    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:185(encode)
+91000/2000    0.280    0.000    0.450    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:172(_structure)
+     9990    0.010    0.000    0.427    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:14(submission_to_dict)
+     9990    0.016    0.000    0.417    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1484(asdict)
+25000/1000    0.069    0.000    0.398    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:205(visit)
+139860/9990    0.205    0.000    0.386    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1508(_asdict_inner)
+25000/1000    0.042    0.000    0.386    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:502(visit)
+25000/1000    0.128    0.000    0.381    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:555(generic_visit)
+    17985    0.373    0.000    0.373    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:207(iterencode)
+     1000    0.024    0.000    0.365    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:149(normalize)
+16000/1000    0.135    0.000    0.308    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\ast_features.py:60(visit)
+    26000    0.063    0.000    0.279    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:386(walk)
+   292000    0.174    0.000    0.256    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:268(iter_fields)
+    67000    0.125    0.000    0.247    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:280(iter_child_nodes)
+     9990    0.013    0.000    0.241    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\serialization.py:20(canonical_json)
+   550970    0.225    0.000    0.225    0.000 {built-in method builtins.isinstance}
+    25000    0.030    0.000    0.205    0.000 {method 'extend' of 'collections.deque' objects}
+   379850    0.158    0.000    0.158    0.000 {built-in method builtins.getattr}
+    19980    0.087    0.000    0.138    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\dataclasses.py:1454(fields)
+     1000    0.003    0.000    0.110    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\ast.py:26(parse)
+     1000    0.107    0.000    0.107    0.000 {built-in method builtins.compile}
+     1000    0.022    0.000    0.068    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:269(parse_submission)
+    10991    0.060    0.000    0.060    0.000 {built-in method _hashlib.openssl_sha256}
+     1000    0.003    0.000    0.052    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:82(decode_json)
+
+

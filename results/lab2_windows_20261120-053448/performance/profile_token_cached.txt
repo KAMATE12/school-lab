@@ -1,0 +1,38 @@
+         314458 function calls in 1.607 seconds
+
+   Ordered by: cumulative time
+   List reduced from 67 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.684    0.684    1.648    1.648 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\benchmark_lab2.py:46(workload)
+     4995    0.197    0.000    0.395    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\corpus_comparison.py:14(compare_prepared_submissions)
+     4995    0.032    0.000    0.392    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:185(dumps)
+     4995    0.022    0.000    0.350    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:185(encode)
+     4995    0.314    0.000    0.314    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:207(iterencode)
+     4995    0.081    0.000    0.085    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\similarity.py:6(jaccard_similarity)
+     4995    0.061    0.000    0.061    0.000 {method 'update' of '_hashlib.HASH' objects}
+    90208    0.054    0.000    0.054    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\corpus_comparison.py:65(<genexpr>)
+     1000    0.016    0.000    0.052    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:269(parse_submission)
+     1000    0.001    0.000    0.032    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:82(decode_json)
+     1000    0.005    0.000    0.030    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:304(loads)
+    90208    0.029    0.000    0.029    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\corpus_comparison.py:69(<genexpr>)
+     1000    0.003    0.000    0.024    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\feature_cache.py:22(prepare)
+       32    0.001    0.000    0.021    0.001 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\prepared_code.py:26(prepare_token_code)
+     1000    0.005    0.000    0.019    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py:340(decode)
+       32    0.003    0.000    0.013    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\token_features.py:36(extract_code_tokens)
+    20990    0.013    0.000    0.013    0.000 {built-in method builtins.isinstance}
+     1000    0.008    0.000    0.011    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py:351(raw_decode)
+     6000    0.005    0.000    0.010    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:131(require_nonempty_string)
+     4995    0.010    0.000    0.010    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:105(__init__)
+     1000    0.006    0.000    0.009    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:234(validate_timestamp)
+       32    0.005    0.000    0.007    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\token_evidence.py:47(build_trigram_occurrences)
+     3000    0.003    0.000    0.006    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:207(optional_string)
+     1000    0.006    0.000    0.006    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py:292(__init__)
+     4995    0.005    0.000    0.005    0.000 {method 'encode' of 'str' objects}
+     2000    0.005    0.000    0.005    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:147(require_fields)
+     8000    0.003    0.000    0.005    0.000 C:\Users\LAPTOP\Projects\school-lab\school-lab-final\.venv\Lib\site-packages\school_lab\validation.py:193(require_string)
+    11887    0.005    0.000    0.005    0.000 {built-in method builtins.len}
+      864    0.002    0.000    0.003    0.000 C:\Users\LAPTOP\AppData\Local\Python\pythoncore-3.14-64\Lib\tokenize.py:581(_generate_tokens_from_c_tokenizer)
+     4995    0.003    0.000    0.003    0.000 {method 'join' of 'str' objects}
+
+
