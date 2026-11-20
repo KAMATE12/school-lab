@@ -1,0 +1,16 @@
+[
+  {
+    "allowed_template": "from typing import Iterable",
+    "assignment_id": "sum_squares",
+    "requirements": [
+      "Return the sum of squares of the nonnegative input integers."
+    ]
+  },
+  {
+    "allowed_template": "from typing import Iterable",
+    "assignment_id": "count_even",
+    "requirements": [
+      "Return the number of even integers in the input iterable."
+    ]
+  }
+]

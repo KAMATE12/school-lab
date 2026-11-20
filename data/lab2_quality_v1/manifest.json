@@ -1,0 +1,33 @@
+{
+  "corpus_version": "lab2-quality-v1",
+  "provenance_policy": "synthetic construction labels, not an independent human annotation",
+  "seed": null,
+  "sha256": {
+    ".gitattributes": "d691ae4c3ef3bf77e7db92783706f3aea675b7b60f5e99e0da19030920a7dfef",
+    "assignments.json": "4b59673eb1d4669970aea4ab809fb2638f3b2da9db0e055fc894f5d7ce6ddc37",
+    "pairs.jsonl": "65f83655a076f87f8bf25f05fb126dc85d0b13e0db12bd00b0b402a1d92ac076",
+    "provenance.jsonl": "0d805dc30c1e505ca1d863e1aad924a449f2b6bfcb9d3ef64518c767510f4d02",
+    "submissions.jsonl": "dd7a49da6a0ed734080e8080b6d21b3dd6994ea926c4023b7652bba6b5139e4b"
+  },
+  "split_policy": "explicit families 01-03 tuning, 04-06 evaluation; scaffold controls split separately",
+  "summary": {
+    "families": 20,
+    "family_overlap": 0,
+    "pairs": 60,
+    "splits": {
+      "evaluation": {
+        "negative": 12,
+        "pairs": 30,
+        "positive": 18,
+        "template_only": 6
+      },
+      "tuning": {
+        "negative": 12,
+        "pairs": 30,
+        "positive": 18,
+        "template_only": 6
+      }
+    },
+    "submissions": 44
+  }
+}
